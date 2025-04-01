@@ -11,7 +11,8 @@
         <div class="vh-100">
             <div class="row pt-5">
                 <div class="col p-2 text-black text-center">
-                    <h1 class="pb-4">{{report_name}} Home Page</h1>
+                    <h1 class="outlined-header-text">{{report_name}} Reports</h1>
+                    <h4 class="outlined-subheader-text">Select an option below:</h1>
                     <a href="{% url create_report_url %}"><button class="basic-nav-btn m-2">Create New {{ report_name }} Report</button></a>
                     <a href="{% url view_reports_url %}"><button class="basic-nav-btn m-2">View {{ report_name }} Reports</button></a>
                     <!---<a href="{% url 'form' %}"><button>Form</button></a>--->

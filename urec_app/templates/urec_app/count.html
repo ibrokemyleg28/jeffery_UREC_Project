@@ -11,8 +11,9 @@
         <div class="vh-100">
             <div class="row pt-5">
                 <div class="col p-2 text-black text-center">
-                    <h1 class="pb-4">Counts Home Page</h1>
-                    <a href="{% url 'count_update' %}"><button class="basic-nav-btn m-2">Update Count</button></a>
+                    <h1 class="outlined-header-text">Counts</h1>
+                    <h4 class="outlined-subheader-text">Select an option below:</h4>
+                    <a href="{% url 'count_update' %}"><button class="basic-nav-btn m-2">Update a Count</button></a>
                     <a href="{% url 'count_view_history' %}"><button class="basic-nav-btn m-2">View Count History</button></a>
                     <a href="{% url 'count_hourly' %}"><button class="basic-nav-btn m-2">View Hourly Counts</button></a>                
                     <!---<a href="{% url 'form' %}"><button>Form</button></a>--->

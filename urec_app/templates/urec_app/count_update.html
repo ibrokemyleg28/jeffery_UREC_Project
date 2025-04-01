@@ -10,19 +10,19 @@
         <br/>
         <div class="col mx-auto overflow-hidden">
             <div class="card card-glassmorph border-0">
-                <h2 class="card-header text-center maroon-bg">Update Count</h2>
+                <h2 class="card-header text-center maroon-bg">Update a Count</h2>
                 
                 <div class="card-body px-4 py-4" id="formset-container">
 <!-- TODO make class different so it doesn't take so much space-->
                     <div class="my-4">
-                        <button type="button" class="form-btn me-2 my-2" id="add-form">Add count</button>
-                        <button type="button" class="form-btn" id="remove-form">Remove count</button>
+                        <button type="button" class="form-btn me-2 my-2" id="add-form">Add another Count</button>
+                        <button type="button" class="form-btn" id="remove-form">Remove a Count</button>
                     </div>
                     <form method="POST" id="countForm">
                         {% csrf_token %}
 
                         <!-- TODO needs to be somewhere else?-->
-                        <button type="submit" class="form-btn-submit-task mb-3">Submit</button>
+                        <button type="submit" class="form-btn-submit-task mb-3">Submit All Count Changes</button>
                         {{ formset.management_form }}
                         
                         {% for form in formset %}
